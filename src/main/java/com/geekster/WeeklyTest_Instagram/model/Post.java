@@ -21,6 +21,6 @@ public class Post {
     private LocalDate updatedDate;
     private String postData;
 
-    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 }
